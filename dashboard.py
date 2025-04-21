@@ -44,7 +44,8 @@ conf_matrices = {
 }
 
 # Sort the feature importance in ascending order
-sorted_feature_importance = dict(sorted(feature_importance.items(), key=lambda item: item[1]))
+sorted_feature_importance = dict(sorted(feature_importance.items(), key=lambda item: item[1], reverse=True))
+
 
 # ---------------------- PAGE SETTINGS ----------------------
 st.set_page_config(page_title="Phishing Detection Dashboard", layout="wide")
