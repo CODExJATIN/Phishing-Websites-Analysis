@@ -72,7 +72,7 @@ with col1:
 
 # ---------- RIGHT: Model Info Box ----------
 with col2:
-    st.subheader("🎯 Selected Model Info")
+    # st.subheader(" Selected Model Info")
     selected_model = st.selectbox("Choose a model:", list(accuracy_scores.keys()))
     st.metric(label="Accuracy", value=f"{accuracy_scores[selected_model]}%")
 
